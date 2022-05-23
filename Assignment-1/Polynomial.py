@@ -9,7 +9,9 @@ from sklearn.model_selection import LeaveOneOut
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import PolynomialFeatures
 
+
 for d in range(1, 10):
+    np.random.seed(56)
     print("for d= ", d)
     x = np.random.normal(0, 1, 5000)
     print(x[0])
