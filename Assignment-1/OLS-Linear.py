@@ -7,8 +7,8 @@ from sklearn.model_selection import LeaveOneOut, KFold
 x= np.random.normal(0, 1, 5000)
 eps= np.random.normal(0, 0.25, 5000)
 y= -1 + 0.5*x -2*x**2 +0.3*x**3 + eps
-plt.scatter(x,y)
-plt.show()
+# plt.scatter(x,y)
+# plt.show()
 x=x.reshape(-1 ,1)
 kf= KFold(n_splits=10)
 yhats=[]
